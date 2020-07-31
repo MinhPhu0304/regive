@@ -4,7 +4,6 @@ import AppID from "ibmcloud-appid-js";
 
 import Cookies from "js-cookie";
 
-const keys = require("../keys.json");
 
 export function Login() {
   const appID = React.useMemo(() => {
