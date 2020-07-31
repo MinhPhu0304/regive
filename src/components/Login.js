@@ -18,8 +18,8 @@ export function Login() {
   (async () => {
     try {
       await appID.init({
-        clientId: keys.SPA_CLIENT_ID,
-        discoveryEndpoint: keys.WELL_KNOWN_ENDPOINT,
+        clientId: process.env.REACT_APP_SPA_CLIENT_ID,
+        discoveryEndpoint: process.env.REACT_APP_WELL_KNOWN_ENDPOINT,
       });
     } catch (e) {
       setErrorState(true);
